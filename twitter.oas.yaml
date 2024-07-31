@@ -33,6 +33,15 @@ paths:
               - tweets
               - users
           style: form
+        - name: origin
+          in: query
+          description: see if I can overwrite origin.
+          required: false
+          schema:
+            type: string
+            enum:
+              - https://api.twitter.com
+          style: form
         - name: status
           in: query
           description: Status of Compliance Job to list.
